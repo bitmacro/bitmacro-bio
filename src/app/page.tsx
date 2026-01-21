@@ -1,65 +1,89 @@
-import Image from "next/image";
+import { ECOSYSTEM_LINKS, SITE_CONFIG } from '@/lib/constants';
+import { sortByRef, getRefParam } from '@/lib/utils';
+import LinkButton from '@/components/LinkButton';
+import RefTracker from '@/components/RefTracker';
 
-export default function Home() {
+interface PageProps {
+  searchParams: Promise<{ ref?: string }>;
+}
+
+export default async function BioPage({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const ref = getRefParam(params.ref);
+  const sortedLinks = sortByRef(ECOSYSTEM_LINKS, ref);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+    <>
+      <RefTracker refParam={ref} />
+      <main className="min-h-screen flex flex-col items-center px-4 py-12">
+        <div className="w-full max-w-md">
+          
+          {/* Header */}
+          <div className="text-center mb-10">
+            {/* Avatar */}
+            <div className="mx-auto w-24 h-24 rounded-full bg-gradient-to-br from-orange-500 to-amber-600 p-1 mb-4">
+              <div className="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center overflow-hidden">
+                <img
+                  src={SITE_CONFIG.avatar}
+                  alt="Bitmacro"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Name */}
+            <h1 className="text-2xl font-bold text-white mb-1">
+              {SITE_CONFIG.name}
+            </h1>
+            
+            {/* Tagline */}
+            <p className="text-zinc-400 mb-2">
+              {SITE_CONFIG.tagline}
+            </p>
+            
+            {/* Location */}
+            <span className="text-sm text-zinc-500">
+              {SITE_CONFIG.location}
+            </span>
+          </div>
+
+          {/* Link Groups */}
+          <div className="space-y-8">
+            {sortedLinks.map((category) => (
+              <div key={category.id}>
+                {/* Category Header */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px flex-1 bg-zinc-800" />
+                  <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium">
+                    {category.subtitle}
+                  </span>
+                  <div className="h-px flex-1 bg-zinc-800" />
+                </div>
+
+                {/* Links */}
+                <div className="space-y-3">
+                  {category.items.map((link) => (
+                    <LinkButton
+                      key={link.id}
+                      link={link}
+                      category={category.title}
+                      refParam={ref}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer */}
+          <footer className="mt-12 text-center">
+            <p className="text-xs text-zinc-600">
+              © {new Date().getFullYear()} Bitmacro
+            </p>
+          </footer>
+
         </div>
       </main>
-    </div>
+    </>
   );
 }
