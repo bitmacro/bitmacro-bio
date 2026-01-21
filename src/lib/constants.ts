@@ -20,7 +20,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://finance.bitmacro.io", 
         description: "SaaS de Fluxo de Caixa",
         icon: "💰",
-        highlight: false
+        highlight: true
       },
     ]
   },
@@ -51,7 +51,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://bitmacro.io/consultoria",
         description: "CTO as a Service",
         icon: "💼",
-        highlight: false
+        highlight: true
       },
       {
         id: "pay_bitmacro",
@@ -59,7 +59,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://pay.bitmacro.io",
         description: "Lightning Service Provider",
         icon: "💳",
-        highlight: false
+        highlight: true
       },
       {
         id: "infra_relay",
@@ -67,7 +67,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://relay.bitmacro.io",
         description: "Nostr Relay & Lightning Node",
         icon: "⚡",
-        highlight: false
+        highlight: true
       },
       {
         id: "status_bitmacro",
@@ -75,7 +75,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://status.bitmacro.io",
         description: "Monitoramento de Infraestrutura",
         icon: "📊",
-        highlight: false
+        highlight: true
       },
     ]
   },
@@ -90,7 +90,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://youtube.com/@DoBitAoMacro", 
         description: "Canal para Investidores",
         icon: "📈",
-        highlight: false
+        highlight: true
       },
       { 
         id: "yt_bitmacrodev",
@@ -98,7 +98,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         url: "https://youtube.com/@BitMacroDev", 
         description: "Canal para Developers",
         icon: "💻",
-        highlight: false
+        highlight: true
       },
     ]
   }

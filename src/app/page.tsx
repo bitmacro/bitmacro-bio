@@ -2,6 +2,7 @@ import { ECOSYSTEM_LINKS, SITE_CONFIG } from '@/lib/constants';
 import { sortByRef, getRefParam } from '@/lib/utils';
 import LinkButton from '@/components/LinkButton';
 import RefTracker from '@/components/RefTracker';
+import Image from 'next/image';
 
 interface PageProps {
   searchParams: Promise<{ ref?: string }>;
@@ -16,21 +17,29 @@ export default async function BioPage({ searchParams }: PageProps) {
     <>
       <RefTracker refParam={ref} />
 
-      <main style={{ padding: '40px 20px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-          <h1 style={{ fontSize: '32px', marginBottom: '10px' }}>{SITE_CONFIG.name}</h1>
-          <p style={{ fontSize: '18px', color: '#666', marginBottom: '5px' }}>{SITE_CONFIG.tagline}</p>
-          <p style={{ fontSize: '14px', color: '#999' }}>{SITE_CONFIG.location}</p>
+      <main>
+        {/* Hero Section */}
+        <div className="hero-section">
+          <div className="logo-container">
+            <Image
+              src={SITE_CONFIG.avatar}
+              alt={SITE_CONFIG.name}
+              width={80}
+              height={80}
+              priority
+            />
+          </div>
+          <h1 className="site-name">{SITE_CONFIG.name}</h1>
+          <p className="site-tagline">{SITE_CONFIG.tagline}</p>
+          <p className="site-location">{SITE_CONFIG.location}</p>
         </div>
 
-        <div>
+        {/* Links */}
+        <div className="container">
           {sortedLinks.map((category) => (
-            <div key={category.id} style={{ marginBottom: '40px' }}>
-              <h2 style={{ fontSize: '14px', color: '#999', marginBottom: '15px', textTransform: 'uppercase' }}>
-                {category.subtitle}
-              </h2>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div key={category.id} className="category-section">
+              <h2 className="category-header">{category.subtitle}</h2>
+              <div>
                 {category.items.map((link) => (
                   <LinkButton
                     key={link.id}
@@ -44,8 +53,9 @@ export default async function BioPage({ searchParams }: PageProps) {
           ))}
         </div>
 
-        <footer style={{ textAlign: 'center', marginTop: '60px', color: '#999', fontSize: '12px' }}>
-          © {new Date().getFullYear()} {SITE_CONFIG.name}
+        {/* Footer */}
+        <footer className="footer">
+          <p>© {new Date().getFullYear()} {SITE_CONFIG.name}. Built with Next.js & deployed on Vercel.</p>
         </footer>
       </main>
     </>
