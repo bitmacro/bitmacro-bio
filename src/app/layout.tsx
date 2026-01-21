@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { GA_MEASUREMENT_ID, CLARITY_PROJECT_ID } from '@/lib/constants';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bio.bitmacro.io'),
@@ -12,12 +9,16 @@ export const metadata: Metadata = {
   description: 'Ecossistema completo para investidores e builders no universo Bitcoin. Apps, educação, infraestrutura e consultoria.',
   keywords: ['Bitcoin', 'Lightning Network', 'Nostr', 'SaaS', 'Infraestrutura', 'Portugal'],
   authors: [{ name: 'Thiago Carvalho - Bitmacro' }],
+  icons: {
+    icon: '/bitmacro.png',
+    apple: '/bitmacro.png',
+  },
   openGraph: {
     title: 'Bitmacro | Bitcoin. Lightning. Business.',
     description: 'Ecossistema completo para investidores e builders no universo Bitcoin.',
     url: 'https://bio.bitmacro.io',
     siteName: 'Bitmacro',
-    images: [{ url: '/logo_bm.png', width: 512, height: 512 }],
+    images: [{ url: '/bitmacro.png', width: 512, height: 512 }],
     locale: 'pt_PT',
     type: 'website',
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bitmacro | Bitcoin. Lightning. Business.',
     description: 'Ecossistema completo para investidores e builders no universo Bitcoin.',
-    images: ['/logo_bm.png'],
+    images: ['/bitmacro.png'],
   },
 };
 
@@ -59,7 +60,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -108,7 +108,7 @@ export const SITE_CONFIG = {
   name: "Bitmacro",
   tagline: "Bitcoin. Lightning. Business.",
   location: "🇵🇹 Portugal",
-  avatar: "/logo_bm.png",
+  avatar: "/bitmacro.png",
 };
 
 export const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // Substituir
