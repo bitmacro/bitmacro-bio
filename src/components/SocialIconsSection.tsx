@@ -17,14 +17,14 @@ export default function SocialIconsSection() {
     <div className="mb-12 flex justify-center" style={{ padding: '20px 0' }}>
       <div className="flex flex-wrap items-center justify-center gap-5" style={{ display: 'flex', gap: '20px' }}>
         {/* Bitmacro */}
-        <a 
+        <a
           href="https://bitmacro.io"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{ 
-            width: '56px', 
-            height: '56px', 
+          style={{
+            width: '56px',
+            height: '56px',
             backgroundColor: 'rgba(59, 130, 246, 0.1)',
             borderRadius: '50%',
             display: 'flex',
@@ -34,15 +34,11 @@ export default function SocialIconsSection() {
             cursor: 'pointer'
           }}
         >
-          <svg 
-            className="h-7 w-7 text-white" 
-            viewBox="0 0 24 24" 
-            fill="currentColor"
-            style={{ width: '28px', height: '28px', color: 'white' }}
-          >
-            <path d="M16.5 4L9 13h5l-1 7 7.5-9h-5l1-7z" fillRule="evenodd" clipRule="evenodd"/>
-            <path d="M7 10v5l2 2 2-3-4-4z" fillRule="evenodd" clipRule="evenodd" opacity="0.6"/>
-          </svg>
+          <img
+            src="/icons/bitmacro.svg"
+            alt="Bitmacro"
+            style={{ width: '28px', height: '28px' }}
+          />
         </a>
         
         {/* Bitcoin */}
@@ -102,14 +98,14 @@ export default function SocialIconsSection() {
         </a>
         
         {/* Nostr */}
-        <a 
+        <a
           href="https://relay.bitmacro.io"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{ 
-            width: '56px', 
-            height: '56px', 
+          style={{
+            width: '56px',
+            height: '56px',
             backgroundColor: 'rgba(59, 130, 246, 0.1)',
             borderRadius: '50%',
             display: 'flex',
@@ -119,18 +115,43 @@ export default function SocialIconsSection() {
             cursor: 'pointer'
           }}
         >
-          <svg 
-            className="h-7 w-7 text-white" 
-            viewBox="0 0 24 24" 
+          <img
+            src="/icons/nostr.svg"
+            alt="Nostr"
+            style={{ width: '28px', height: '28px' }}
+          />
+        </a>
+        
+        {/* YouTube */}
+        <a
+          href="https://youtube.com/@DoBitAoMacro"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
+          style={{
+            width: '56px',
+            height: '56px',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <svg
+            className="h-7 w-7 text-white"
+            viewBox="0 0 24 24"
             fill="currentColor"
             style={{ width: '28px', height: '28px', color: 'white' }}
           >
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.176 15.65c-.246.406-.61.716-1.036.883-.426.167-.887.214-1.34.135l-2.072-.36c-.453-.079-.87-.278-1.2-.572L9.4 13.7c-.33-.294-.572-.67-.703-1.088-.13-.418-.158-.86-.08-1.286l.36-2.072c.079-.453.278-.87.572-1.2l2.036-2.128c.33-.294.734-.486 1.17-.558.436-.072.883-.024 1.3.14l2.072.804c.417.164.77.447 1.02.82.25.373.38.814.375 1.264l-.024 2.22c-.005.45-.115.89-.32 1.29l-.93 1.83c-.205.4-.504.735-.87 1.004z"/>
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
         </a>
-        
+
         {/* Instagram */}
-        <a 
+        <a
           href="https://instagram.com/bitmacro"
           target="_blank"
           rel="noopener noreferrer"
