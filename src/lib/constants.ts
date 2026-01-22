@@ -105,9 +105,9 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
 ];
 
 export const SITE_CONFIG = {
-  name: "Bitmacro",
+  name: "BitMacro",
   tagline: "Bitcoin. Lightning. Business.",
-  location: "🇵🇹 Portugal",
+  location: "",
   avatar: "/bitmacro.png",
 };
 

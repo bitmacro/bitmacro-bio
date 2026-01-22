@@ -3,6 +3,7 @@ import { sortByRef, getRefParam } from '@/lib/utils';
 import LinkButton from '@/components/LinkButton';
 import RefTracker from '@/components/RefTracker';
 import Image from 'next/image';
+import SocialIconsSection from '@/components/SocialIconsSection';
 
 interface PageProps {
   searchParams: Promise<{ ref?: string }>;
@@ -34,6 +35,9 @@ export default async function BioPage({ searchParams }: PageProps) {
           <p className="site-location">{SITE_CONFIG.location}</p>
         </div>
 
+        {/* Social Icons */}
+        <SocialIconsSection />
+
         {/* Links */}
         <div className="container">
           {sortedLinks.map((category) => (
@@ -55,7 +59,7 @@ export default async function BioPage({ searchParams }: PageProps) {
 
         {/* Footer */}
         <footer className="footer">
-          <p>© {new Date().getFullYear()} {SITE_CONFIG.name}. Built with Next.js & deployed on Vercel.</p>
+          <p>© {new Date().getFullYear()} {SITE_CONFIG.name}.</p>
         </footer>
       </main>
     </>
