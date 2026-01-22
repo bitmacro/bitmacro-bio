@@ -10,8 +10,8 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         id: "app_bitmacro",
         label: "Bitmacro App", 
         url: "https://app.bitmacro.io", 
-        description: "Gestão de Carteiras Bitcoin",
-        icon: "🛠️",
+        description: "Gestão de Carteiras Crypto",
+        icon: "/icons/crypto.png",
         highlight: true
       },
       { 
@@ -19,7 +19,15 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         label: "Bitmacro Finance", 
         url: "https://finance.bitmacro.io", 
         description: "SaaS de Fluxo de Caixa",
-        icon: "💰",
+        icon: "💵",
+        highlight: true
+      },
+      {
+        id: "hub_bitmacro",
+        label: "BitMacro Hub",
+        url: "https://bitmacro.io",
+        description: "Centro Gravitacional",
+        icon: "🌐",
         highlight: true
       },
     ]
@@ -30,14 +38,6 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
     subtitle: "PARA ENGENHEIROS",
     items: [
       {
-        id: "hub_bitmacro",
-        label: "BitMacro Hub",
-        url: "https://bitmacro.io",
-        description: "Centro Gravitacional do Ecossistema",
-        icon: "🏠",
-        highlight: true
-      },
-      {
         id: "flow_education",
         label: "Bitflow Education",
         url: "https://flow.bitmacro.io",
@@ -45,14 +45,14 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         icon: "🎓",
         highlight: true
       },
-      {
-        id: "consultoria_cto",
-        label: "Consultoria CTO",
-        url: "https://bitmacro.io/consultoria",
-        description: "CTO as a Service",
-        icon: "💼",
-        highlight: true
-      },
+      // {
+      //   id: "consultoria_cto",
+      //   label: "Consultoria CTO",
+      //   url: "https://bitmacro.io/consultoria",
+      //   description: "CTO as a Service",
+      //   icon: "💼",
+      //   highlight: true
+      // },
       {
         id: "pay_bitmacro",
         label: "BitMacro Pay",
@@ -69,14 +69,14 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
         icon: "⚡",
         highlight: true
       },
-      {
-        id: "status_bitmacro",
-        label: "BitMacro Status",
-        url: "https://status.bitmacro.io",
-        description: "Monitoramento de Infraestrutura",
-        icon: "📊",
-        highlight: true
-      },
+      // {
+      //   id: "status_bitmacro",
+      //   label: "BitMacro Status",
+      //   url: "https://status.bitmacro.io",
+      //   description: "Monitoramento de Infraestrutura",
+      //   icon: "🖥️",
+      //   highlight: true
+      // },
     ]
   },
   {

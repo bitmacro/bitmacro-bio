@@ -31,7 +31,21 @@ export default function LinkButton({ link, category, refParam }: LinkButtonProps
       className={cardClass}
     >
       <div className="link-content">
-        <div className="link-icon">{link.icon}</div>
+        <div className="link-icon">
+          {link.icon.startsWith('/') ? (
+            <img 
+              src={link.icon} 
+              alt={link.label} 
+              style={{ 
+                width: link.id === 'app_bitmacro' ? '48px' : '36px', 
+                height: link.id === 'app_bitmacro' ? '48px' : '36px', 
+                objectFit: 'contain' 
+              }} 
+            />
+          ) : (
+            link.icon
+          )}
+        </div>
         <div className="link-text">
           <div className="link-title">{link.label}</div>
           <div className="link-description">{link.description}</div>
