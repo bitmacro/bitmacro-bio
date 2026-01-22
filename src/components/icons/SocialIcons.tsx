@@ -4,14 +4,12 @@ interface IconProps {
   className?: string;
 }
 
-export const BitmacroIcon = ({ className = "h-6 w-6" }: IconProps) => {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.5 4L9 13h5l-1 7 7.5-9h-5l1-7z" fillRule="evenodd" clipRule="evenodd"/>
-      <path d="M7 10v5l2 2 2-3-4-4z" fillRule="evenodd" clipRule="evenodd" opacity="0.6"/>
-    </svg>
-  );
-};
+export const BitmacroIcon = ({ className = "h-6 w-6" }: IconProps) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.5 3L9.5 12.5h5L13 21l9-11h-5.5l1-7z" />
+    <path d="M6 9v8l3.5 2.5 3-5L6 9z" opacity="0.7" />
+  </svg>
+);
 
 export const BitcoinIcon = ({ className = "h-6 w-6" }: IconProps) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +28,12 @@ export const NostrIcon = ({ className = "h-6 w-6" }: IconProps) => (
     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.176 15.65c-.246.406-.61.716-1.036.883-.426.167-.887.214-1.34.135l-2.072-.36c-.453-.079-.87-.278-1.2-.572L9.4 13.7c-.33-.294-.572-.67-.703-1.088-.13-.418-.158-.86-.08-1.286l.36-2.072c.079-.453.278-.87.572-1.2l2.036-2.128c.33-.294.734-.486 1.17-.558.436-.072.883-.024 1.3.14l2.072.804c.417.164.77.447 1.02.82.25.373.38.814.375 1.264l-.024 2.22c-.005.45-.115.89-.32 1.29l-.93 1.83c-.205.4-.504.735-.87 1.004z"/>
   </svg>
 );
+
+export const YoutubeIcon = ({ className = "h-6 w-6" }: IconProps) => (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  );
 
 export const InstagramIcon = ({ className = "h-6 w-6" }: IconProps) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,11 +62,5 @@ export const LinkedInIcon = ({ className = "h-6 w-6" }: IconProps) => (
 export const TelegramIcon = ({ className = "h-6 w-6" }: IconProps) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-  </svg>
-);
-
-export const YoutubeIcon = ({ className = "h-6 w-6" }: IconProps) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
   </svg>
 );

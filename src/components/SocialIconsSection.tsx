@@ -15,7 +15,7 @@ export default function SocialIconsSection() {
 
   return (
     <div className="mb-12 flex justify-center" style={{ padding: '20px 0' }}>
-      <div className="flex flex-wrap items-center justify-center gap-6" style={{ display: 'flex', gap: '24px' }}>
+      <div className="flex flex-wrap items-center justify-center gap-5" style={{ display: 'flex', gap: '20px' }}>
         {/* Bitmacro */}
         <a 
           href="https://bitmacro.io"
