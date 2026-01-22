@@ -1,130 +1,12 @@
 'use client';
 
 export default function SocialIconsSection() {
-  const socialLinks = [
-    { name: 'Bitmacro', url: 'https://bitmacro.io' },
-    { name: 'Bitcoin', url: 'https://bitcoin.org' },
-    { name: 'Lightning', url: 'https://relay.bitmacro.io' },
-    { name: 'Nostr', url: 'https://relay.bitmacro.io' },
-    { name: 'Instagram', url: 'https://instagram.com/bitmacro' },
-    { name: 'Facebook', url: 'https://facebook.com/bitmacro' },
-    { name: 'X', url: 'https://x.com/bitmacro' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/company/bitmacro' },
-    { name: 'Telegram', url: 'https://t.me/bitmacro' },
-  ];
-
   return (
     <div className="mb-12 flex justify-center" style={{ padding: '20px 0' }}>
       <div className="flex flex-wrap items-center justify-center gap-5" style={{ display: 'flex', gap: '20px' }}>
-        {/* Bitmacro */}
-        <a
-          href="https://bitmacro.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{
-            width: '56px',
-            height: '56px',
-            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textDecoration: 'none',
-            cursor: 'pointer'
-          }}
-        >
-          <img
-            src="/icons/bitmacro.svg"
-            alt="Bitmacro"
-            style={{ width: '28px', height: '28px' }}
-          />
-        </a>
-        
-        {/* Bitcoin */}
-        <a 
-          href="https://bitcoin.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{ 
-            width: '56px', 
-            height: '56px', 
-            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textDecoration: 'none',
-            cursor: 'pointer'
-          }}
-        >
-          <svg 
-            className="h-7 w-7 text-white" 
-            viewBox="0 0 24 24" 
-            fill="currentColor"
-            style={{ width: '28px', height: '28px', color: 'white' }}
-          >
-            <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.238c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"/>
-          </svg>
-        </a>
-        
-        {/* Lightning */}
-        <a 
-          href="https://relay.bitmacro.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{ 
-            width: '56px', 
-            height: '56px', 
-            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textDecoration: 'none',
-            cursor: 'pointer'
-          }}
-        >
-          <svg 
-            className="h-7 w-7 text-white" 
-            viewBox="0 0 24 24" 
-            fill="currentColor"
-            style={{ width: '28px', height: '28px', color: 'white' }}
-          >
-            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
-          </svg>
-        </a>
-        
-        {/* Nostr */}
-        <a
-          href="https://relay.bitmacro.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
-          style={{
-            width: '56px',
-            height: '56px',
-            backgroundColor: 'rgba(59, 130, 246, 0.1)',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textDecoration: 'none',
-            cursor: 'pointer'
-          }}
-        >
-          <img
-            src="/icons/nostr.svg"
-            alt="Nostr"
-            style={{ width: '28px', height: '28px' }}
-          />
-        </a>
-        
         {/* YouTube */}
         <a
-          href="https://youtube.com/@DoBitAoMacro"
+          href="https://www.youtube.com/@dobitaomacro"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
@@ -152,7 +34,7 @@ export default function SocialIconsSection() {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com/bitmacro"
+          href="https://www.instagram.com/dobitaomacro/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
@@ -180,7 +62,7 @@ export default function SocialIconsSection() {
         
         {/* Facebook */}
         <a 
-          href="https://facebook.com/bitmacro"
+          href="https://www.facebook.com/dobitaomacro"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
@@ -206,8 +88,115 @@ export default function SocialIconsSection() {
           </svg>
         </a>
         
-        {/* X */}
+        {/* Nostr */}
+        <a
+          href="https://primal.net/p/nprofile1qqsw4nce493m2trvzw52hhup45qc0fhahvf95u3vwsse478ncm0ysps0z2u2n"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
+          style={{
+            width: '56px',
+            height: '56px',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <img
+            src="/icons/nostr.svg"
+            alt="Nostr"
+            style={{ width: '28px', height: '28px' }}
+          />
+        </a>
+        
+        {/* Lightning */}
         <a 
+          href="https://pay.bitmacro.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
+          style={{ 
+            width: '56px', 
+            height: '56px', 
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <svg 
+            className="h-7 w-7 text-white" 
+            viewBox="0 0 24 24" 
+            fill="currentColor"
+            style={{ width: '28px', height: '28px', color: 'white' }}
+          >
+            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+          </svg>
+        </a>
+
+        {/* Comentados - não aparecem */}
+        {/* Bitmacro */}
+        {/* <a
+          href="https://bitmacro.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
+          style={{
+            width: '56px',
+            height: '56px',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <img
+            src="/icons/bitmacro.svg"
+            alt="Bitmacro"
+            style={{ width: '28px', height: '28px' }}
+          />
+        </a> */}
+        
+        {/* Bitcoin */}
+        {/* <a 
+          href="https://bitcoin.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:shadow-lg"
+          style={{ 
+            width: '56px', 
+            height: '56px', 
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
+          <svg 
+            className="h-7 w-7 text-white" 
+            viewBox="0 0 24 24" 
+            fill="currentColor"
+            style={{ width: '28px', height: '28px', color: 'white' }}
+          >
+            <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.238c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"/>
+          </svg>
+        </a> */}
+        
+        {/* X */}
+        {/* <a 
           href="https://x.com/bitmacro"
           target="_blank"
           rel="noopener noreferrer"
@@ -232,10 +221,10 @@ export default function SocialIconsSection() {
           >
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
           </svg>
-        </a>
+        </a> */}
         
         {/* LinkedIn */}
-        <a 
+        {/* <a 
           href="https://linkedin.com/company/bitmacro"
           target="_blank"
           rel="noopener noreferrer"
@@ -260,10 +249,10 @@ export default function SocialIconsSection() {
           >
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
           </svg>
-        </a>
+        </a> */}
         
         {/* Telegram */}
-        <a 
+        {/* <a 
           href="https://t.me/bitmacro"
           target="_blank"
           rel="noopener noreferrer"
@@ -288,7 +277,7 @@ export default function SocialIconsSection() {
           >
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );
