@@ -9,6 +9,7 @@ export default function SocialIconsSection() {
           href="https://www.youtube.com/@dobitaomacro"
           target="_blank"
           rel="noopener noreferrer"
+          title="YouTube"
           className="social-icon group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500"
           style={{
             width: '56px',
@@ -38,6 +39,7 @@ export default function SocialIconsSection() {
           href="https://www.instagram.com/dobitaomacro/"
           target="_blank"
           rel="noopener noreferrer"
+          title="Instagram"
           className="social-icon group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500"
           style={{ 
             width: '56px', 
@@ -67,6 +69,7 @@ export default function SocialIconsSection() {
           href="https://www.facebook.com/dobitaomacro"
           target="_blank"
           rel="noopener noreferrer"
+          title="Facebook"
           className="social-icon group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500"
           style={{ 
             width: '56px', 
@@ -96,6 +99,7 @@ export default function SocialIconsSection() {
           href="https://primal.net/p/nprofile1qqsw4nce493m2trvzw52hhup45qc0fhahvf95u3vwsse478ncm0ysps0z2u2n"
           target="_blank"
           rel="noopener noreferrer"
+          title="Nostr"
           className="social-icon group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500"
           style={{
             width: '56px',
@@ -122,6 +126,7 @@ export default function SocialIconsSection() {
           href="https://pay.bitmacro.io/"
           target="_blank"
           rel="noopener noreferrer"
+          title="Lightning"
           className="social-icon group flex h-14 w-14 items-center justify-center rounded-full bg-blue-500/10 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500"
           style={{ 
             width: '56px', 
