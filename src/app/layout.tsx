@@ -5,26 +5,26 @@ import { GA_MEASUREMENT_ID, CLARITY_PROJECT_ID } from '@/lib/constants';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bio.bitmacro.io'),
-  title: 'Bitmacro | Bitcoin. Lightning. Business.',
+  title: 'BitMacro | Bitcoin. Lightning. Business.',
   description: 'Ecossistema completo para investidores e builders no universo Bitcoin. Apps, educação, infraestrutura e consultoria.',
   keywords: ['Bitcoin', 'Lightning Network', 'Nostr', 'SaaS', 'Infraestrutura', 'Portugal'],
-  authors: [{ name: 'Thiago Carvalho - Bitmacro' }],
+  authors: [{ name: 'Thiago Carvalho - BitMacro' }],
   icons: {
     icon: '/bitmacro.png',
     apple: '/bitmacro.png',
   },
   openGraph: {
-    title: 'Bitmacro | Bitcoin. Lightning. Business.',
+    title: 'BitMacro | Bitcoin. Lightning. Business.',
     description: 'Ecossistema completo para investidores e builders no universo Bitcoin.',
     url: 'https://bio.bitmacro.io',
-    siteName: 'Bitmacro',
+    siteName: 'BitMacro',
     images: [{ url: '/bitmacro.png', width: 512, height: 512 }],
     locale: 'pt_PT',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bitmacro | Bitcoin. Lightning. Business.',
+    title: 'BitMacro | Bitcoin. Lightning. Business.',
     description: 'Ecossistema completo para investidores e builders no universo Bitcoin.',
     images: ['/bitmacro.png'],
   },

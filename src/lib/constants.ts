@@ -8,7 +8,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
     items: [
       { 
         id: "app_bitmacro",
-        label: "Bitmacro App", 
+        label: "BitMacro App", 
         url: "https://app.bitmacro.io", 
         description: "Gestão de Carteiras Crypto",
         icon: "/icons/crypto.png",
@@ -16,7 +16,7 @@ export const ECOSYSTEM_LINKS: EcosystemCategory[] = [
       },
       { 
         id: "finance_bitmacro",
-        label: "Bitmacro Finance", 
+        label: "BitMacro Finance", 
         url: "https://finance.bitmacro.io", 
         description: "SaaS de Fluxo de Caixa",
         icon: "💵",

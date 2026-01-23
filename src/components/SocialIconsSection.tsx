@@ -152,7 +152,7 @@ export default function SocialIconsSection() {
         </a>
 
         {/* Comentados - não aparecem */}
-        {/* Bitmacro */}
+        {/* BitMacro */}
         {/* <a
           href="https://bitmacro.io"
           target="_blank"
@@ -172,7 +172,7 @@ export default function SocialIconsSection() {
         >
           <img
             src="/icons/bitmacro.svg"
-            alt="Bitmacro"
+            alt="BitMacro"
             style={{ width: '28px', height: '28px' }}
           />
         </a> */}

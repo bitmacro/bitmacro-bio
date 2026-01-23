@@ -4,7 +4,7 @@ interface IconProps {
   className?: string;
 }
 
-export const BitmacroIcon = ({ className = "h-6 w-6" }: IconProps) => (
+export const BitMacroIcon = ({ className = "h-6 w-6" }: IconProps) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.5 3L9.5 12.5h5L13 21l9-11h-5.5l1-7z" />
     <path d="M6 9v8l3.5 2.5 3-5L6 9z" opacity="0.7" />
